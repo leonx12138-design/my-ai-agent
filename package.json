@@ -1,0 +1,14 @@
+{
+  "name": "my-ai-agent",
+  "version": "1.0.0",
+  "description": "基于 Claude Code 架构的简化 AI 助手",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node agent.js",
+    "dev": "node --watch agent.js"
+  },
+  "keywords": ["ai", "agent", "llm"],
+  "author": "",
+  "license": "MIT"
+}
