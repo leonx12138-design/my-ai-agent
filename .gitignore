@@ -1,6 +1,35 @@
+# 依赖
 node_modules/
+package-lock.json
+
+# 环境变量
 .env
+
+# 数据库
+*.db
+data.db
+
+# Ollama模型文件
+Modelfile
+
+# 日志
 *.log
+logs/
+
+# 临时文件
+*.tmp
 .DS_Store
-dist/
+Thumbs.db
+
+# IDE
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# 训练数据（可选）
+training-data/
+*.jsonl
+
+# 备份文件
+*.bak

@@ -1,14 +1,28 @@
 {
   "name": "my-ai-agent",
-  "version": "1.0.0",
-  "description": "基于 Claude Code 架构的简化 AI 助手",
+  "version": "2.0.0",
+  "description": "可商业化的AI智能体 - 支持本地模型训练和付费API调用 - leon12138",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node agent.js",
-    "dev": "node --watch agent.js"
+    "dev": "node --watch agent.js",
+    "server": "node api-server.js",
+    "server:dev": "node --watch api-server.js",
+    "client": "node example-client.js",
+    "train": "node create-leon12138.js",
+    "train:custom": "node train-custom-model.js"
   },
-  "keywords": ["ai", "agent", "llm"],
-  "author": "",
-  "license": "MIT"
+  "keywords": ["ai", "agent", "llm", "api", "ollama", "local-model", "leon12138"],
+  "author": "leon12138",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
